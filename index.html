@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wat da kich</title>
+</head>
+<body>
+    
+    <p>Bắt đầu</p>
+    <audio src="./Audio/Pink_Panther.mp3" controls id="Pink_Panther"></audio>
+    <p>(Rón rén)</p>
+    <p>(Cầm máy ảnh lên chụp)</p>
+    <audio src="./Audio/Camera2.mp3" controls id="Camera"></audio>
+    <p>(Lắc đầu, chụp lại) <button onclick="playAudio('Camera2'); playAudio('Camera3')">Chụp x2</button></p>
+    <audio src="./Audio/Camera2.mp3" controls id="Camera2"></audio> <br/>
+    <audio src="./Audio/Camera2.mp3" controls id="Camera3"></audio>
+    <p>Ông kiên dậy, giảm tiếng: 
+        <button onclick="fadeOut('Pink_Panther', 1, 0.5)">Giảm một nửa</button>
+        <button onclick="fadeOut('Pink_Panther', 0.5, 0)">Tắt</button>
+    </p>
+
+    <p>Chuyển cảnh</p>
+    <audio src="./Audio/ChuyenCanh.mp3" controls id="ChuyenCanh"></audio>
+    <p>
+        <button onclick="playAudio('ChuyenCanh')">Chuyển cảnh</button>
+        <button onclick="fadeOut('ChuyenCanh')">Chuyển cảnh xong</button>
+    </p>
+
+    <p>Nam và Hùng tiến vào</p>
+    <p>...</p>
+    <p>Hùng: thôi, được rồi cũng đến giờ trưa rồi, tgiờ bọn anh dẫn em lên ubnd xã nơi tụi anh làm việc để sắp xếp chổ ở cho em nhé i</p>
+    <p>Mọi người đi ra, chuyển cảnh</p>
+    <p>
+        <button onclick="playAudio('ChuyenCanh')">Chuyển cảnh</button>
+        <button onclick="fadeOut('ChuyenCanh')">Chuyển cảnh xong</button>
+    </p>
+
+    <p>Bảo Khánh ngồi xuống, bắt đầu đọc thơ...</p>
+    <audio src="./Audio/Dunno.mp3" controls id="Romantic"></audio>
+    <p>...Nhành lá trên đầu: <button onclick="fadeOut('Romantic')">Tắt</button></p>
+    <p>...</p>
+    <p>ơ mà sao anh không nói gì (xoay lại)</p>
+    <audio src="./Audio/Beat_cau_hon.mp3" controls id="Beat_cau_hon"></audio>
+    <p>Trời có sập xuống thì cũng chẳng là gì</p>
+    <p>Trời sập thật: <button onclick="playAudio('Dramatic'); fadeOut('Beat_cau_hon', 1, 0, 1, 0)">Sập</button></p>
+    <audio src="./Audio/KTL.mp3" controls id="Dramatic"></audio>
+    <p>Anh nghèo hơn nó...</p>
+    <audio src="./Audio/Ba_dum_tss.mp3" controls></audio>
+    <p>Bà con ở đây mừng lắm (1s delay)</p>
+    <audio src="./Audio/IphoneRingtoneShort.mp3" controls></audio>
+    <p>Dương đi ra, Bảo Khánh đi vào</p> <button onclick="playAudio('Romantic')">Play</button>
+    <p>Đám người đi vào <button onclick="playAudio('Nhac_dc'); fadeOut('Romantic')">Nhạc đám cưới</button></p>
+    <audio src="./Audio/Dam_Cuoi_Nhu_Mo.mp3" controls id="Nhac_dc"></audio>
+    <p>Giảm dần: <button onclick="fadeOut('Nhac_dc', 1, 0.3)">Giảm</button></p>
+
+    <script src="./lib/AudioControl.js"></script>
+    <script src="./js/control.js"></script>
+</body>
+</html>
